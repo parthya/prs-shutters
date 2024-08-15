@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/prs-shutters/static/css/main.9cb87c5e.css",
+    "main.js": "/prs-shutters/static/js/main.407ebe51.js",
+    "static/media/door.png": "/prs-shutters/static/media/door.4b12d4a238af60a37f08.png",
+    "static/media/background.png": "/prs-shutters/static/media/background.330e540605fc236c8896.png",
+    "index.html": "/prs-shutters/index.html",
+    "main.9cb87c5e.css.map": "/prs-shutters/static/css/main.9cb87c5e.css.map",
+    "main.407ebe51.js.map": "/prs-shutters/static/js/main.407ebe51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cb87c5e.css",
+    "static/js/main.407ebe51.js"
+  ]
+}
