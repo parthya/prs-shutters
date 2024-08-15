@@ -1,0 +1,125 @@
+.app {
+    background-color: #171717;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.full_page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.animated_layers {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.animated_layers>* {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+}
+
+.wall {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* Ensures nothing goes outside the bounds */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('door.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Places the door behind the wall */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_container {
+    position: absolute;
+    z-index: -2;
+    width: 40vh;
+}
+
+.title {
+    color: black;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    /* Base font size relative to viewport width */
+}
+
+.info_text {
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 2.5vw;
+    /* Adjusted font size relative to viewport width */
+}
+
+/* Adjust font-size for landscape orientation with limited vertical space */
+@media (orientation: landscape) {
+    .title {
+        font-size: 3vh;
+        /* Adjust based on viewport height */
+    }
+
+    .info_text {
+        font-size: 2vh;
+        /* Adjust based on viewport height */
+    }
+    
+    .text_container {
+        width: 50vh;
+    }
+}
+
+/* Further adjustments for specific breakpoints */
+@media (min-width: 640px) {
+    .title {
+        font-size: 3.5vw;
+        /* Adjust for larger screens */
+    }
+
+    .info_text {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 3vw;
+        /* Reduce font size for larger screens */
+    }
+
+    .info_text {
+        font-size: 1.75vw;
+    }
+}
